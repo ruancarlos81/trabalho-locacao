@@ -3,23 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <title>Nova Locação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Registrar Locação</h1>
-  <form>
-    <label>Carro:</label><br>
-    <input type="text" name="carro"><br><br>
-    <label>Cliente:</label><br>
-    <input type="text" name="cliente"><br><br>
-    <label>Data de Retirada:</label><br>
-    <input type="date" name="data_retirada"><br><br>
-    <label>Data de Devolução:</label><br>
-    <input type="date" name="data_devolucao"><br><br>
-    <label>Valor:</label><br>
-    <input type="number" name="valor"><br><br>
-    <label>Observações:</label><br>
-    <textarea name="observacoes"></textarea><br><br>
-    <button type="submit">Salvar Locação</button>
-  </form>
+  <div class="form-container">
+    <h1>Registrar Locação</h1>
+    <form>
+      <label for="carro">Carro:</label>
+      <input type="text" name="carro" id="carro">
+
+      <label for="cliente">Cliente:</label>
+      <input type="text" name="cliente" id="cliente">
+
+      <label for="data_retirada">Data de Retirada:</label>
+      <input type="date" name="data_retirada" id="data_retirada">
+
+      <label for="data_devolucao">Data de Devolução:</label>
+      <input type="date" name="data_devolucao" id="data_devolucao">
+
+      <label for="valor">Valor:</label>
+      <input type="number" name="valor" id="valor">
+
+      <label for="observacoes">Observações:</label>
+      <textarea name="observacoes" id="observacoes" rows="3"></textarea>
+
+      <button type="submit">Salvar Locação</button>
+    </form>
+  </div>
 </body>
 </html>

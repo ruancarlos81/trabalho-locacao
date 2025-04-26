@@ -3,22 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <title>Lista de Carros</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .table-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:first-child {
+      background-color: #007BFF;
+      color: white;
+      margin-right: 5px;
+    }
+
+    button:first-child:hover {
+      background-color: #0056b3;
+    }
+
+    button:last-child {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    button:last-child:hover {
+      background-color: #a71d2a;
+    }
+  </style>
 </head>
 <body>
-  <h1>Carros Cadastrados</h1>
-  <table border="1">
-    <tr>
-      <th>Modelo</th>
-      <th>Ano</th>
-      <th>Cor</th>
-      <th>Ações</th>
-    </tr>
-    <tr>
-      <td>Onix</td>
-      <td>2023</td>
-      <td>Prata</td>
-      <td><button>Editar</button> <button>Excluir</button></td>
-    </tr>
-  </table>
+  <div class="table-container">
+    <h1>Carros Cadastrados</h1>
+    <table>
+      <tr>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Cor</th>
+        <th>Ações</th>
+      </tr>
+      <tr>
+        <td>Onix</td>
+        <td>2023</td>
+        <td>Prata</td>
+        <td><button>Editar</button> <button>Excluir</button></td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>

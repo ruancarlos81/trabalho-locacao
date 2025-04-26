@@ -4,24 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Cadastrar Novo Carro</h1>
-    <form>
-        <label>Modelo:</label><br>
-        <input type="text" name="modelo"><br><br>
-        <label>Ano:</label><br>
-        <input type="text" name="ano"><br><br>
-        <label>Cor:</label><br>
-        <input type="text" name="cor"><br><br>
-        <label>Descrição:</label><br>
-        <textarea name="descricao"></textarea><br><br>
-        <label>Observações:</label><br>
-        <textarea name="observacoes"></textarea><br><br>
-        <button type="submit">Cadastrar Carro</button>
-    </form>
-</body>
-</html>
-    </form>
+    <div class="form-container">
+        <h1>Cadastrar Novo Carro</h1>
+        <form>
+            <label for="modelo">Modelo:</label>
+            <input type="text" name="modelo" id="modelo">
+
+            <label for="ano">Ano:</label>
+            <input type="text" name="ano" id="ano">
+
+            <label for="cor">Cor:</label>
+            <input type="text" name="cor" id="cor">
+
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" rows="3"></textarea>
+
+            <label for="observacoes">Observações:</label>
+            <textarea name="observacoes" id="observacoes" rows="3"></textarea>
+
+            <button type="submit">Cadastrar Carro</button>
+        </form>
+    </div>
 </body>
 </html>
